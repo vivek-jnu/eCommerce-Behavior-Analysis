@@ -1,38 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import numpy as np
-
-
-# In[2]:
-
-
 import pandas as pd
-
-
-# In[3]:
-
-
 import matplotlib.pyplot as plt
 
-
-# In[ ]:
-
-
-
-
-
-# In[6]:
-
-
 data_cust = pd.read_csv("CUSTOMERS.csv")
-
-
-# In[7]:
-
 
 data_seller = pd.read_csv("Sellers.csv")
 data_prod = pd.read_csv("Products.csv")
@@ -52,19 +23,9 @@ data2 = pd.merge(data1,data_prod, on = "product_id", how = "inner" )
 data3 = pd.merge(data2, data_seller, on = "seller_id", how = "inner")
 
 
-# In[8]:
-
 
 data_cust.head()
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
